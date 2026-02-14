@@ -3,287 +3,333 @@ def lambda_handler(event, context):
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Manmadh Kumar Reddy Reddy Palle Palle Manmadh  | DevOps Portfolio</title>
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manmadh Kumar Reddy | Profile</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #2B1B17;
+            --secondary-color: #5D4037;
+            --accent-color: #8D6E63;
+            --background-color: #F5F5F5;
+            --light-color: #D7CCC8;
+            --text-dark: #2B1B17;
+            --text-light: #FFF;
+        }
+        
         body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-dark);
             margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-            background: #f4f6f8;
-            color: #333;
-            overflow-x: hidden;
-        }
-
-        header {
-            background: #232f3e;
-            color: white;
-            padding: 60px 20px;
+            padding: 0;
             text-align: center;
-            position: relative;
-            overflow: hidden;
+            line-height: 1.6;
         }
-
-        /* Decorative SVG background blob */
-        .header-blob {
-            position: absolute;
-            pointer-events: none;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-            opacity: 0.18;
+        
+        header {
+            padding: 30px 20px;
+            background-color: var(--background-color);
+            border-bottom: 3px solid var(--primary-color);
+        }
+        
+        h1 { 
+            margin: 8px 0; 
+            font-size: 2.5em; 
+            color: var(--primary-color);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            border-bottom: 2px solid var(--light-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+        }
+        
+        p { 
+            margin: 4px 0 15px 0;
+            font-size: 1.1em; 
+            color: var(--secondary-color);
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
         }
 
         /* Profile Image */
         .profile-img {
-            width: 170px;
-            height: 170px;
-            border-radius: 50%;
-            border: 5px solid #ff9900;
-            object-fit: cover;
-            margin-top: 20px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
-            z-index: 2;
-            position: relative;
-        }
-
-        nav {
-            background: #ff9900;
-            padding: 12px;
-            text-align: center;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            color: #232f3e;
-        }
-
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        h2 {
-            color: #232f3e;
-        }
-
-        /* Floating Icons */
-        .icon {
-            position: absolute;
-            font-size: 42px;
-            opacity: 0.7;
-            animation: floatAnim linear infinite;
-        }
-
-
-        .tech-icon { font-size: 48px; opacity: 0.95 }
-
-        /* Small rotation for variety */
-        .spin-slow { animation: spin 12s linear infinite; }
-        .spin-medium { animation: spin 9s linear infinite; }
-
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-        .aws { color: #ff9900; }
-        .linux { color: #00b894; }
-        .devops { color: #1f77b4; }
-        .automation { color: #6c5ce7; }
-        .monitoring { color: #e17055; }
-
-        @keyframes floatAnim {
-            0% { transform: translateY(0px) translateX(0px); }
-            50% { transform: translateY(-25px) translateX(15px); }
-            100% { transform: translateY(0px) translateX(0px); }
-        }
-
-        /* Wave separator */
-        .wave {
+            width: 500px;          
+            height: 250px;         
+            object-fit: cover;     
+            border-radius: 10px;   
+            border: 4px solid var(--primary-color);
             display: block;
-            width: 100%;
-            margin-top: -6px;
+            margin: 0 auto 20px auto;
+            box-shadow: 0 5px 15px rgba(43, 27, 23, 0.1);
         }
 
-        /* Skills */
-        .skill-container {
-            margin: 20px 0;
+        /* Title under name */
+        .title {
+            font-size: 1.3em;
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 25px;
+            font-family: 'Poppins', sans-serif;
         }
 
-        .skill-label {
-            font-weight: bold;
-        }
-
-        .skill-bar {
-            width: 100%;
-            background: #ddd;
-            border-radius: 25px;
+        /* Scrolling skills */
+        .scrolling-skills {
             overflow: hidden;
-            height: 25px;
+            white-space: nowrap;
+            border-top: 2px solid var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            background: var(--primary-color);
+            color: var(--light-color);
+            font-weight: 600;
+            padding: 12px 0;
+            font-size: 1.1em;
+            font-family: 'Poppins', sans-serif;
+        }
+        .scrolling-skills span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scrollLeft 20s linear infinite;
+        }
+        @keyframes scrollLeft { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
+
+        /* Main content sections */
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section { 
+            padding: 30px 0;  
+            text-align: left; 
+            border-bottom: 1px solid var(--light-color);
+        }
+        
+        section:last-child {
+            border-bottom: none;
+        }
+        
+        .project { 
+            margin-bottom: 20px; 
+            padding: 15px;
+            background-color: rgba(215, 204, 200, 0.1);
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .contact a { 
+            color: var(--primary-color); 
+            margin: 0 15px; 
+            font-size: 1.8em; 
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .contact a:hover {
+            color: var(--accent-color);
+            transform: translateY(-3px);
         }
 
-        .skill-level {
-            height: 100%;
-            background: linear-gradient(90deg, #1f77b4, #00b894);
-            color: white;
-            text-align: right;
-            padding-right: 10px;
-            line-height: 25px;
-            font-weight: bold;
+        /* Skills list */
+        .skills-list {
+            list-style-type: none;
+            padding-left: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        
+        .skills-list li {
+            margin-bottom: 12px;
+            font-size: 1.1em;
+            padding: 10px 15px;
+            background-color: rgba(215, 204, 200, 0.1);
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        
+        .skills-list li:hover {
+            background-color: rgba(141, 110, 99, 0.1);
+            transform: translateX(5px);
+        }
+        
+        .skills-list strong {
+            color: var(--primary-color);
+            font-family: 'Poppins', sans-serif;
         }
 
-        /* Projects */
-        .project {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-left: 5px solid #ff9900;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            transition: transform 220ms ease, box-shadow 220ms ease;
+        /* Skills bars */
+        .skill-container { 
+            margin-bottom: 15px; 
+        }
+        
+        .skill-label { 
+            margin-bottom: 5px; 
+            font-weight: 600; 
+            color: var(--primary-color);
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .skill-bar { 
+            background: var(--light-color); 
+            border-radius: 10px; 
+            overflow: hidden; 
+            height: 12px; 
+        }
+        
+        .skill-level { 
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color)); 
+            height: 100%; 
+            text-align: right; 
+            padding-right: 10px; 
+            color: var(--text-light); 
+            font-weight: bold; 
+            font-size: 0.8em;
+            line-height: 12px;
         }
 
-        .project:hover { transform: translateY(-6px); box-shadow: 0 8px 22px rgba(0,0,0,0.14); }
+        /* Footer */
+        footer { 
+            padding: 25px 15px; 
+            background-color: var(--primary-color); 
+            color: var(--light-color); 
+            text-align: center; 
+            margin-top: 40px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        footer p {
+            color: var(--light-color);
+            margin: 0;
+        }
 
-        footer {
-            background: #232f3e;
-            color: white;
-            text-align: center;
-            padding: 20px;
+        /* Responsive */
+        @media (max-width: 768px) {
+            .profile-img { 
+                width: 90%; 
+                height: auto;
+                max-height: 200px;
+            }
+            
+            h1 { font-size: 2em; }
+            
+            .scrolling-skills { 
+                font-size: 0.9em; 
+                padding: 8px 0;
+            }
+            
+            .skills-list {
+                grid-template-columns: 1fr;
+            }
+            
+            section {
+                padding: 20px 0;
+            }
+            
+            .contact a {
+                margin: 0 10px;
+                font-size: 1.5em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 { font-size: 1.8em; }
+            
+            .title {
+                font-size: 1.1em;
+            }
+            
+            .profile-img {
+                border-width: 3px;
+            }
         }
     </style>
 </head>
-
 <body>
+    <header>
+        <h1>🚀 Manmadh Kumar Reddy</h1>
+        <img src="https://manmadhreddy.s3.us-east-1.amazonaws.com/Profile_Pic2.jpg" alt="Manmadh Kumar Reddy" class="profile-img">
+        <div class="title">Linux | AWS | DevOps Engineer | SRE | Automation | Monitoring</div>
+        <div class="scrolling-skills">
+            <span>Linux ⚡ AWS ⚡ CI/CD ⚡ Automation ⚡ Monitoring ⚡ Docker ⚡ Kubernetes ⚡ Terraform ⚡ Python ⚡ GitHub Actions ⚡</span>
+        </div>
+    </header>
 
-<header>
-    <svg class="header-blob" viewBox="0 0 800 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-            <linearGradient id="g1" x1="0" x2="1">
-                <stop offset="0%" stop-color="#ff9900"/>
-                <stop offset="100%" stop-color="#6c5ce7"/>
-            </linearGradient>
-            <filter id="blur"><feGaussianBlur stdDeviation="40"/></filter>
-        </defs>
-        <g filter="url(#blur)">
-            <path d="M0 120 Q160 20 300 140 T800 120 L800 400 L0 400 Z" fill="url(#g1)" opacity="0.9"/>
-            <circle cx="95" cy="60" r="60" fill="#1f77b4" opacity="0.6"/>
-            <circle cx="720" cy="80" r="40" fill="#00b894" opacity="0.5"/>
-        </g>
-    </svg>
-    <!-- Floating Icons -->
-    <i class="fab fa-aws icon aws tech-icon spin-medium" style="top:30px; left:40px; animation-duration:7s;"></i>
-    <i class="fab fa-linux icon linux tech-icon" style="top:120px; left:200px; animation-duration:9s;"></i>
-    <i class="fas fa-cogs icon devops tech-icon spin-slow" style="top:60px; right:80px; animation-duration:8s;"></i>
-    <i class="fas fa-robot icon automation tech-icon" style="top:160px; right:220px; animation-duration:10s;"></i>
-    <i class="fas fa-chart-line icon monitoring tech-icon" style="top:40px; right:350px; animation-duration:11s;"></i>
-    <i class="fab fa-docker icon" style="top:220px; left:60px; color:#2496ED; animation-duration:10s;"></i>
-    <i class="fab fa-kubernetes icon" style="top:40px; left:320px; color:#326CE5; animation-duration:12s;"></i>
-    <i class="fas fa-cloud icon" style="top:200px; right:380px; color:#8ec5ff; animation-duration:9s;"></i>
-    <i class="fas fa-server icon" style="top:260px; right:120px; color:#ffd166; animation-duration:8s;"></i>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a Cloud and DevOps Engineer with strong hands-on experience in Linux system administration,
+            AWS cloud services, CI/CD pipelines, infrastructure engineering, SRE practices,
+            automation, and monitoring. This portfolio is built using AWS Lambda.</p>
+        </section>
 
-    <h1>🚀 Manmadh Kumar Reddy</h1>
+        <section id="skills">
+            <h2>💡 Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Operating Systems:</strong> Linux (Suse, Ubuntu, Amazon Linux)</li>
+                <li><strong>Cloud Platforms:</strong> AWS (EC2, S3, IAM, VPC, EBS), OpenStack (Nova)</li>
+                <li><strong>Automation & IaC:</strong> Bash Scripting, Terraform</li>
+                <li><strong>Containers:</strong> Docker, Kubernetes</li>
+                <li><strong>Infrastructure & Ops:</strong> Server Provisioning, Capacity Planning, Scaling, Backup & Recovery</li>
+                <li><strong>Networking:</strong> TCP/IP, DNS, Subnetting, LAN/WAN</li>
+                <li><strong>Monitoring & Support:</strong> Incident Management, RCA, SLA Support, Preventive Maintenance</li>
+                <li><strong>Databases & Storage:</strong> Storage Expansion, Database Migration</li>
+                <li><strong>Methodologies:</strong> Production Support, High Availability, Disaster Recovery</li>
+            </ul>
+        </section>
 
-    <img src="https://manmadhreddy.s3.us-east-1.amazonaws.com/Profile_Pic4.jpg"
-         alt="Manmadh Kumar Reddy"
-         class="profile-img">
+        <section id="projects">
+            <h2>📂 Projects</h2>
+            <div class="project">
+                <h3>Serverless DevOps Portfolio</h3>
+                <p>AWS Lambda + API Gateway + S3 + Route 53 based serverless portfolio.</p>
+            </div>
+            <div class="project">
+                <h3>CI/CD Automation</h3>
+                <p>Jenkins pipelines integrating GitHub, Docker, EC2, and automated deployments.</p>
+            </div>
+            <div class="project">
+                <h3>Monitoring Stack</h3>
+                <p>Prometheus, Grafana dashboards with alerts and performance monitoring.</p>
+            </div>
+        </section>
 
-    <p>Linux | AWS | DevOps Engineer | SRE | Automation | Monitoring</p>
+        <section id="contact">
+            <h2>📫 Contact Me</h2>
+            <div class="contact">
+                <a href="mailto:reddy.manmadh@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/manmadh-reddy-89b35017" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/manmadhdevops" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+    </main>
 
-    <!-- Social / badges row -->
-    <div style="margin-top:14px; z-index:2; position:relative;">
-        <a href="#projects" style="color:white; margin:0 8px; text-decoration:none; font-weight:600;">Explore Projects</a>
-        <span style="display:inline-block; width:10px;"></span>
-        <a href="https://github.com/" target="_blank" style="color:white; margin:0 8px;"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/" target="_blank" style="color:white; margin:0 8px;"><i class="fab fa-linkedin"></i></a>
-    </div>
-</header>
-
-<nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-</nav>
-
-<section id="about">
-    <h2>👋 About Me</h2>
-    <p>
-        I am a DevOps Engineer with strong hands-on experience in Linux system administration,
-        AWS cloud services, CI/CD pipelines, infrastructure engineering, SRE practices,
-        automation, and monitoring. This portfolio is fully serverless using AWS Lambda.
-    </p>
-</section>
-
-<section id="skills">
-    <h2>💡 Skills</h2>
-
-    <div class="skill-container">
-        <div class="skill-label">Linux Administration</div>
-        <div class="skill-bar"><div class="skill-level" style="width:90%">90%</div></div>
-    </div>
-
-    <div class="skill-container">
-        <div class="skill-label">AWS Cloud</div>
-        <div class="skill-bar"><div class="skill-level" style="width:85%">85%</div></div>
-    </div>
-
-    <div class="skill-container">
-        <div class="skill-label">CI/CD Pipelines</div>
-        <div class="skill-bar"><div class="skill-level" style="width:80%">80%</div></div>
-    </div>
-
-    <div class="skill-container">
-        <div class="skill-label">Automation</div>
-        <div class="skill-bar"><div class="skill-level" style="width:90%">90%</div></div>
-    </div>
-
-    <div class="skill-container">
-        <div class="skill-label">Monitoring & SRE</div>
-        <div class="skill-bar"><div class="skill-level" style="width:85%">85%</div></div>
-    </div>
-</section>
-
-<svg class="wave" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg"><path fill="#232f3e" d="M0,0 C360,80 1080,-40 1440,20 L1440,60 L0,60 Z"></path></svg>
-
-<section id="projects">
-    <h2>📂 Projects</h2>
-
-    <div class="project">
-        <h3>Serverless DevOps Portfolio <span style="float:right; color:#999;"><i class="fas fa-laptop-code"></i></span></h3>
-        <p>AWS Lambda + API Gateway + S3 + Route 53 based serverless portfolio.</p>
-    </div>
-
-    <div class="project">
-        <h3>CI/CD Automation <span style="float:right; color:#999;"><i class="fas fa-project-diagram"></i></span></h3>
-        <p>Jenkins pipelines integrating GitHub, Docker, EC2, and automated deployments.</p>
-    </div>
-
-    <div class="project">
-        <h3>Monitoring Stack <span style="float:right; color:#999;"><i class="fas fa-chart-area"></i></span></h3>
-        <p>Prometheus, Grafana dashboards with alerts and performance monitoring.</p>
-    </div>
-
-    <div class="project">
-        <h3>Infrastructure as Code</h3>
-        <p>Terraform modules and reusable CloudFormation templates for repeatable infra.</p>
-    </div>
-</section>
-
-<footer>
-    <p>© 2026 Manmadh Kumar Reddy 🚀</p>
-</footer>
-
+    <footer>
+        <p>© 2026 Manmadh Kumar Reddy 🚀</p>
+    </footer>
 </body>
 </html>
 """
     return {
         "statusCode": 200,
-        "headers": {
-            "Content-Type": "text/html; charset=UTF-8"
-        },
+        "headers": {"Content-Type": "text/html; charset=UTF-8"},
         "body": html
     }
