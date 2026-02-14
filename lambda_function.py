@@ -186,7 +186,7 @@ def lambda_handler(event, context):
 
     <h1>🚀 Manmadh </h1>
 
-    <img src="https://manmadhreddy.s3.us-east-1.amazonaws.com/Profile_Pic3.jpg"
+    <img src="https://manmadhreddy.s3.us-east-1.amazonaws.com/Profile_Pic4.jpg"
          alt="Manmadh K R"
          class="profile-img">
 
