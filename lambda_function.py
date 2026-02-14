@@ -38,8 +38,8 @@ def lambda_handler(event, context):
 
         /* Profile Image */
         .profile-img {
-            width: 250px;
-            height: 250px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             border: 5px solid #ff9900;
             object-fit: cover;
