@@ -264,15 +264,36 @@ def lambda_handler(event, context):
     </style>
 </head>
 <body>
-    <header>
-        <h1>🚀 Manmadh Kumar Reddy</h1>
-        <img src="https://manmadhreddy.s3.us-east-1.amazonaws.com/Profile_Pic4.jpg" alt="Manmadh Kumar Reddy" class="profile-img">
-        <div class="title">Linux | AWS | DevOps Engineer | SRE | Automation | Monitoring</div>
-        <div class="scrolling-skills">
-            <span>Linux ⚡ AWS ⚡ CI/CD ⚡ Automation ⚡ Monitoring ⚡ Docker ⚡ Kubernetes ⚡ Terraform ⚡ Python ⚡ GitHub Actions ⚡</span>
-        </div>
-    </header>
+<header>
+    <h1>🚀 Manmadh Kumar Reddy</h1>
 
+    <img src="https://manmadhreddy.s3.us-east-1.amazonaws.com/Profile_Pic4.jpg"
+         alt="Manmadh Kumar Reddy"
+         class="profile-img">
+
+    <div class="title">
+        <i class="fab fa-linux"></i> Linux &nbsp; | &nbsp;
+        <i class="fab fa-aws"></i> AWS &nbsp; | &nbsp;
+        <i class="fas fa-infinity"></i> DevOps Engineer &nbsp; | &nbsp;
+        <i class="fas fa-shield-alt"></i> SRE &nbsp; | &nbsp;
+        <i class="fas fa-robot"></i> Automation &nbsp; | &nbsp;
+        <i class="fas fa-chart-line"></i> Monitoring
+    </div>
+
+    <div class="scrolling-skills">
+        <span>
+            <i class="fab fa-linux"></i> Linux ⚡ 
+            <i class="fab fa-aws"></i> AWS ⚡ 
+            <i class="fas fa-code-branch"></i> CI/CD ⚡ 
+            <i class="fas fa-robot"></i> Automation ⚡ 
+            <i class="fas fa-chart-line"></i> Monitoring ⚡ 
+            <i class="fab fa-docker"></i> Docker ⚡ 
+            <i class="fas fa-dharmachakra"></i> Kubernetes ⚡ 
+            <i class="fas fa-layer-group"></i> Terraform ⚡ 
+            <i class="fab fa-python"></i> Python ⚡ 
+            <i class="fab fa-github"></i> GitHub Actions ⚡
+        </span>
+    </div>
     <main>
         <section id="about">
             <h2>About Me</h2>
