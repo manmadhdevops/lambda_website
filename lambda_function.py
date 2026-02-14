@@ -189,7 +189,7 @@ def lambda_handler(event, context):
     <h1>🚀 Manmadh </h1>
 
     <img src="https://manmadhreddy.s3.us-east-1.amazonaws.com/Profile_Pic1.jpg"
-         alt="Manmadh "
+         alt="Manmadh K"
          class="profile-img">
 
     <p>Linux | AWS | DevOps Engineer | SRE | Automation | Monitoring</p>
