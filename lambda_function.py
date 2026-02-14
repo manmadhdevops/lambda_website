@@ -292,6 +292,8 @@ def lambda_handler(event, context):
             <i class="fas fa-layer-group"></i> Terraform ⚡ 
             <i class="fab fa-python"></i> Python ⚡ 
             <i class="fab fa-github"></i> GitHub Actions ⚡
+            <i class="fas fa-network-wired"></i> Networking ⚡ 
+
         </span>
     </div>
     <main>
