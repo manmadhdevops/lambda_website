@@ -3,7 +3,7 @@ def lambda_handler(event, context):
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Manmadh| DevOps Portfolio</title>
+    <title>Manmadh Kumar Reddy Reddy Palle Palle Manmadh  | DevOps Portfolio</title>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
@@ -36,15 +36,17 @@ def lambda_handler(event, context):
             opacity: 0.18;
         }
 
+        /* Profile Image */
         .profile-img {
-            width: 250px;
-            height: 250px;
+            width: 170px;
+            height: 170px;
             border-radius: 50%;
             border: 5px solid #ff9900;
             object-fit: cover;
-            image-rendering: -webkit-optimize-contrast;
-            image-rendering: crisp-edges;
-            transform: translateZ(0);
+            margin-top: 20px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+            z-index: 2;
+            position: relative;
         }
 
         nav {
@@ -184,10 +186,10 @@ def lambda_handler(event, context):
     <i class="fas fa-cloud icon" style="top:200px; right:380px; color:#8ec5ff; animation-duration:9s;"></i>
     <i class="fas fa-server icon" style="top:260px; right:120px; color:#ffd166; animation-duration:8s;"></i>
 
-    <h1>🚀 Manmadh </h1>
+    <h1>🚀 Manmadh Kumar Reddy</h1>
 
     <img src="https://manmadhreddy.s3.us-east-1.amazonaws.com/Profile_Pic4.jpg"
-         alt="Manmadh K R"
+         alt="Manmadh Kumar Reddy"
          class="profile-img">
 
     <p>Linux | AWS | DevOps Engineer | SRE | Automation | Monitoring</p>
