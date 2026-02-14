@@ -70,7 +70,7 @@ def lambda_handler(event, context):
 
         /* Profile Image */
         .profile-img {
-            width: 500px;          
+            width: 300px;          
             height: 250px;         
             object-fit: cover;     
             border-radius: 10px;   
@@ -266,7 +266,7 @@ def lambda_handler(event, context):
 <body>
     <header>
         <h1>🚀 Manmadh Kumar Reddy</h1>
-        <img src="https://manmadhreddy.s3.us-east-1.amazonaws.com/Profile_Pic2.jpg" alt="Manmadh Kumar Reddy" class="profile-img">
+        <img src="https://manmadhreddy.s3.us-east-1.amazonaws.com/Profile_Pic4.jpg" alt="Manmadh Kumar Reddy" class="profile-img">
         <div class="title">Linux | AWS | DevOps Engineer | SRE | Automation | Monitoring</div>
         <div class="scrolling-skills">
             <span>Linux ⚡ AWS ⚡ CI/CD ⚡ Automation ⚡ Monitoring ⚡ Docker ⚡ Kubernetes ⚡ Terraform ⚡ Python ⚡ GitHub Actions ⚡</span>
