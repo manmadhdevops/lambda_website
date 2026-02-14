@@ -36,17 +36,17 @@ def lambda_handler(event, context):
             opacity: 0.18;
         }
 
-        /* Profile Image */
         .profile-img {
-            width: 100px;
-            height: 100px;
+            width: 250px;
+            height: 250px;
             border-radius: 50%;
             border: 5px solid #ff9900;
             object-fit: cover;
-            margin-top: 20px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
-            z-index: 2;
-            position: relative;
+
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+
+            transform: translateZ(0);
         }
 
         nav {
