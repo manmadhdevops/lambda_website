@@ -278,7 +278,9 @@ def lambda_handler(event, context):
         <i class="fas fa-shield-alt"></i> SRE &nbsp; | &nbsp;
         <i class="fas fa-robot"></i> Automation &nbsp; | &nbsp;
         <i class="fas fa-chart-line"></i> Monitoring
-    </div>
+        <i class="fas fa-network-wired"></i> Networking &nbsp; | &nbsp;
+        <i class="fas fa-project-diagram"></i> n8n &nbsp; | &nbsp;
+            </div>
 
     <div class="scrolling-skills">
         <span>
@@ -290,7 +292,7 @@ def lambda_handler(event, context):
             <i class="fab fa-docker"></i> Docker ⚡ 
             <i class="fas fa-dharmachakra"></i> Kubernetes ⚡ 
             <i class="fas fa-layer-group"></i> Terraform ⚡ 
-            <i class="fab fa-python"></i> Python ⚡ 
+            <i class="fas fa-project-diagram"></i> n8n ⚡
             <i class="fab fa-github"></i> GitHub Actions ⚡
             <i class="fas fa-network-wired"></i> Networking ⚡ 
 
@@ -309,7 +311,7 @@ def lambda_handler(event, context):
             <ul class="skills-list">
                 <li><strong>Operating Systems:</strong> Linux (Suse, Ubuntu, Amazon Linux)</li>
                 <li><strong>Cloud Platforms:</strong> AWS (EC2, S3, IAM, VPC, EBS), OpenStack (Nova)</li>
-                <li><strong>Automation & IaC:</strong> Bash Scripting, Terraform</li>
+                <li><strong>Automation & IaC:</strong> Bash Scripting, Terraform, N8N </li>
                 <li><strong>Containers:</strong> Docker, Kubernetes</li>
                 <li><strong>Infrastructure & Ops:</strong> Server Provisioning, Capacity Planning, Scaling, Backup & Recovery</li>
                 <li><strong>Networking:</strong> TCP/IP, DNS, Subnetting, LAN/WAN</li>
