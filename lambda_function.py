@@ -294,6 +294,12 @@ def lambda_handler(event, context):
     margin-right: 5px;
 }
 
+.aws-icon {
+    width: 28px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
 
     </style>
 </head>
