@@ -96,8 +96,8 @@ def lambda_handler(event, context):
             white-space: nowrap;
             border-top: 2px solid var(--primary-color);
             border-bottom: 2px solid var(--primary-color);
-            background: var(--primary-color);
-            color: var(--light-color);
+            background: #F0F2F5;
+            color: var(--primary-color);
             font-weight: 600;
             padding: 12px 0;
             font-size: 1.1em;
