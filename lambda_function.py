@@ -282,6 +282,19 @@ def lambda_handler(event, context):
         .jump:nth-of-type(7) { animation-delay: 1.2s; }
         .jump:nth-of-type(8) { animation-delay: 1.4s; }
 
+        .title i {
+    font-size: 1.3em;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.n8n-icon {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
     </style>
 </head>
 <body>
@@ -292,22 +305,19 @@ def lambda_handler(event, context):
          alt="Manmadh Kumar Reddy"
          class="profile-img">
 
+
     <div class="title">
-        <i class="devicon-linux-plain colored jump"></i> Linux &nbsp; | &nbsp;
-        <i class="devicon-amazonwebservices-original colored"></i>
-
-
-        <i class="devicon-linux-plain colored jump"></i> Linux &nbsp; | &nbsp;
-        <i class="devicon-amazonwebservices-original colored jump"></i> AWS &nbsp; | &nbsp;
-        <i class="fas fa-infinity jump"></i> DevOps Engineer &nbsp; | &nbsp;
-        <i class="fas fa-shield-alt jump"></i> SRE &nbsp; | &nbsp;
-        <i class="fas fa-robot jump"></i> Automation &nbsp; | &nbsp;
-        <i class="fas fa-chart-line jump"></i> Monitoring &nbsp; | &nbsp;
-        <i class="fas fa-network-wired jump"></i> Networking &nbsp; | &nbsp;
-        <i class="devicon-n8n-plain colored jump"></i> n8n &nbsp; | &nbsp;
-
-
+    <i class="devicon-linux-plain colored jump"></i> Linux &nbsp; | &nbsp;
+    <i class="devicon-amazonwebservices-original colored jump"></i> AWS &nbsp; | &nbsp;
+    <i class="fas fa-infinity jump"></i> DevOps Engineer &nbsp; | &nbsp;
+    <i class="fas fa-shield-alt jump"></i> SRE &nbsp; | &nbsp;
+    <i class="fas fa-robot jump"></i> Automation &nbsp; | &nbsp;
+    <i class="fas fa-chart-line jump"></i> Monitoring &nbsp; | &nbsp;
+    <i class="fas fa-network-wired jump"></i> Networking &nbsp; | &nbsp;
+    <img src="https://avatars.githubusercontent.com/u/45487711?s=200&v=4" class="jump n8n-icon"> n8n
             </div>
+
+
 
     <div class="scrolling-skills">
         <span>
