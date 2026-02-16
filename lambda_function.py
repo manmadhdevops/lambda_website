@@ -262,6 +262,26 @@ def lambda_handler(event, context):
                 border-width: 3px;
             }
         }
+        /* Jump animation for icons */
+            .jump {
+            display: inline-block;
+            animation: jump 2s ease-in-out infinite;
+            }
+
+        @keyframes jump {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+            }
+
+        .jump:nth-of-type(1) { animation-delay: 0s; }
+        .jump:nth-of-type(2) { animation-delay: 0.2s; }
+        .jump:nth-of-type(3) { animation-delay: 0.4s; }
+        .jump:nth-of-type(4) { animation-delay: 0.6s; }
+        .jump:nth-of-type(5) { animation-delay: 0.8s; }
+        .jump:nth-of-type(6) { animation-delay: 1s; }
+        .jump:nth-of-type(7) { animation-delay: 1.2s; }
+        .jump:nth-of-type(8) { animation-delay: 1.4s; }
+
     </style>
 </head>
 <body>
@@ -273,17 +293,19 @@ def lambda_handler(event, context):
          class="profile-img">
 
     <div class="title">
-        <i class="devicon-linux-plain colored"></i>
+        <i class="devicon-linux-plain colored jump"></i> Linux &nbsp; | &nbsp;
         <i class="devicon-amazonwebservices-original colored"></i>
 
-        <i class="fab fa-linux"></i> Linux &nbsp; | &nbsp;
-        <i class="fab fa-aws"></i> AWS &nbsp; | &nbsp;
-        <i class="fas fa-infinity"></i> DevOps Engineer &nbsp; | &nbsp;
-        <i class="fas fa-shield-alt"></i> SRE &nbsp; | &nbsp;
-        <i class="fas fa-robot"></i> Automation &nbsp; | &nbsp;
-        <i class="fas fa-chart-line"></i> Monitoring
-        <i class="fas fa-network-wired"></i> Networking &nbsp; | &nbsp;
-        <i class="fas fa-project-diagram"></i> n8n &nbsp; | &nbsp;
+
+        <i class="devicon-linux-plain colored jump"></i> Linux &nbsp; | &nbsp;
+        <i class="devicon-amazonwebservices-original colored jump"></i> AWS &nbsp; | &nbsp;
+        <i class="fas fa-infinity jump"></i> DevOps Engineer &nbsp; | &nbsp;
+        <i class="fas fa-shield-alt jump"></i> SRE &nbsp; | &nbsp;
+        <i class="fas fa-robot jump"></i> Automation &nbsp; | &nbsp;
+        <i class="fas fa-chart-line jump"></i> Monitoring &nbsp; | &nbsp;
+        <i class="fas fa-network-wired jump"></i> Networking &nbsp; | &nbsp;
+        <i class="devicon-n8n-plain colored jump"></i> n8n &nbsp; | &nbsp;
+
 
             </div>
 
