@@ -315,11 +315,11 @@ def lambda_handler(event, context):
     <div class="title">
     <i class="devicon-linux-plain colored jump"></i> Linux &nbsp; | &nbsp;
     <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" class="jump aws-icon"> AWS | &nbsp;
-    <i class="fas fa-infinity jump"></i> DevOps Engineer &nbsp; | &nbsp;
-    <i class="fas fa-shield-alt jump"></i> SRE &nbsp; | &nbsp;
-    <i class="fas fa-robot jump"></i> Automation &nbsp; | &nbsp;
-    <i class="fas fa-chart-line jump"></i> Monitoring &nbsp; | &nbsp;
-    <i class="fas fa-network-wired jump"></i> Networking &nbsp; | &nbsp;
+    <img src="https://cdn-icons-png.flaticon.com/512/2721/2721291.png" class="jump icon-img"> DevOps Engineer &nbsp; | &nbsp;
+    <img src="https://cdn-icons-png.flaticon.com/512/2913/2913465.png" class="jump icon-img"> SRE &nbsp; | &nbsp;
+    <img src="https://cdn-icons-png.flaticon.com/512/3063/3063822.png" class="jump icon-img"> Automation &nbsp; | &nbsp;
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="jump icon-img"> Monitoring &nbsp; | &nbsp;
+    <img src="https://cdn-icons-png.flaticon.com/512/3212/3212608.png" class="jump icon-img"> Networking &nbsp; | &nbsp;
     <img src="https://avatars.githubusercontent.com/u/45487711?s=200&v=4" class="jump n8n-icon"> n8n
             </div>
 
