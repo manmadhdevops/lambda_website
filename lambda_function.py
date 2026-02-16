@@ -5,16 +5,11 @@ def lambda_handler(event, context):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manmadh Kumar Reddy | Profile</title>
-
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Devicon CDN (ONLY ADDITION) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
     <style>
         :root {
             --primary-color: #2B1B17;
@@ -74,6 +69,7 @@ def lambda_handler(event, context):
             line-height: 1.7;
         }
 
+        /* Profile Image */
         .profile-img {
             width: 300px;          
             height: 250px;         
@@ -85,6 +81,7 @@ def lambda_handler(event, context):
             box-shadow: 0 5px 15px rgba(43, 27, 23, 0.1);
         }
 
+        /* Title under name */
         .title {
             font-size: 1.3em;
             color: var(--secondary-color);
@@ -93,6 +90,7 @@ def lambda_handler(event, context):
             font-family: 'Poppins', sans-serif;
         }
 
+        /* Scrolling skills */
         .scrolling-skills {
             overflow: hidden;
             white-space: nowrap;
@@ -105,18 +103,14 @@ def lambda_handler(event, context):
             font-size: 1.1em;
             font-family: 'Poppins', sans-serif;
         }
-
         .scrolling-skills span {
             display: inline-block;
             padding-left: 100%;
             animation: scrollLeft 20s linear infinite;
         }
+        @keyframes scrollLeft { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
 
-        @keyframes scrollLeft { 
-            0% { transform: translateX(0); } 
-            100% { transform: translateX(-100%); } 
-        }
-
+        /* Main content sections */
         main {
             max-width: 1000px;
             margin: 0 auto;
@@ -155,6 +149,65 @@ def lambda_handler(event, context):
             transform: translateY(-3px);
         }
 
+        /* Skills list */
+        .skills-list {
+            list-style-type: none;
+            padding-left: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        
+        .skills-list li {
+            margin-bottom: 12px;
+            font-size: 1.1em;
+            padding: 10px 15px;
+            background-color: rgba(215, 204, 200, 0.1);
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        
+        .skills-list li:hover {
+            background-color: rgba(141, 110, 99, 0.1);
+            transform: translateX(5px);
+        }
+        
+        .skills-list strong {
+            color: var(--primary-color);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Skills bars */
+        .skill-container { 
+            margin-bottom: 15px; 
+        }
+        
+        .skill-label { 
+            margin-bottom: 5px; 
+            font-weight: 600; 
+            color: var(--primary-color);
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .skill-bar { 
+            background: var(--light-color); 
+            border-radius: 10px; 
+            overflow: hidden; 
+            height: 12px; 
+        }
+        
+        .skill-level { 
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color)); 
+            height: 100%; 
+            text-align: right; 
+            padding-right: 10px; 
+            color: var(--text-light); 
+            font-weight: bold; 
+            font-size: 0.8em;
+            line-height: 12px;
+        }
+
+        /* Footer */
         footer { 
             padding: 25px 15px; 
             background-color: var(--primary-color); 
@@ -163,14 +216,54 @@ def lambda_handler(event, context):
             margin-top: 40px;
             font-family: 'Poppins', sans-serif;
         }
-
+        
         footer p {
             color: var(--light-color);
             margin: 0;
         }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .profile-img { 
+                width: 90%; 
+                height: auto;
+                max-height: 200px;
+            }
+            
+            h1 { font-size: 2em; }
+            
+            .scrolling-skills { 
+                font-size: 0.9em; 
+                padding: 8px 0;
+            }
+            
+            .skills-list {
+                grid-template-columns: 1fr;
+            }
+            
+            section {
+                padding: 20px 0;
+            }
+            
+            .contact a {
+                margin: 0 10px;
+                font-size: 1.5em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 { font-size: 1.8em; }
+            
+            .title {
+                font-size: 1.1em;
+            }
+            
+            .profile-img {
+                border-width: 3px;
+            }
+        }
     </style>
 </head>
-
 <body>
 <header>
     <h1>🚀 Manmadh Kumar Reddy</h1>
@@ -180,80 +273,86 @@ def lambda_handler(event, context):
          class="profile-img">
 
     <div class="title">
-        <i class="devicon-linux-plain colored"></i> Linux &nbsp; | &nbsp;
-        <i class="devicon-amazonwebservices-original colored"></i> AWS &nbsp; | &nbsp;
+        <i class="devicon-linux-plain colored"></i>
+        <i class="devicon-amazonwebservices-original colored"></i>
+
         <i class="fas fa-infinity"></i> DevOps Engineer &nbsp; | &nbsp;
         <i class="fas fa-shield-alt"></i> SRE &nbsp; | &nbsp;
         <i class="fas fa-robot"></i> Automation &nbsp; | &nbsp;
-        <i class="fas fa-chart-line"></i> Monitoring &nbsp; | &nbsp;
+        <i class="fas fa-chart-line"></i> Monitoring
         <i class="fas fa-network-wired"></i> Networking &nbsp; | &nbsp;
-        <i class="devicon-n8n-plain colored"></i> n8n
-    </div>
+        <i class="devicon-n8n-plain colored"></i>
+
+            </div>
 
     <div class="scrolling-skills">
         <span>
             <i class="devicon-linux-plain colored"></i> Linux⚡ 
             <i class="devicon-amazonwebservices-original colored"></i> AWS ⚡ 
-            <i class="devicon-githubactions-plain colored"></i> CI/CD ⚡ 
-            <i class="devicon-ansible-plain colored"></i> Automation ⚡ 
-            <i class="devicon-grafana-original colored"></i> Monitoring ⚡ 
+            <i class="fas fa-code-branch"></i> CI/CD ⚡ 
+            <i class="fas fa-robot"></i> Automation ⚡ 
+            <i class="fas fa-chart-line"></i> Monitoring ⚡ 
             <i class="devicon-docker-plain colored"></i> Docker ⚡ 
             <i class="devicon-kubernetes-plain colored"></i> Kubernetes ⚡ 
             <i class="devicon-terraform-plain colored"></i> Terraform ⚡ 
             <i class="devicon-n8n-plain colored"></i> n8n ⚡
             <i class="devicon-githubactions-plain colored"></i> GitHub Actions ⚡
-            <i class="devicon-nginx-original colored"></i> Networking ⚡
+            <i class="fas fa-network-wired"></i> Networking ⚡ 
+
         </span>
     </div>
-</header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a Cloud and DevOps Engineer with strong hands-on experience in Linux system administration,
+            AWS cloud services, CI/CD pipelines, infrastructure engineering, SRE practices,
+            automation, and monitoring. This portfolio is built using AWS Lambda + API GateWay + Route 53.</p>
+        </section>
 
-<main>
+        <section id="skills">
+            <h2>💡 Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Operating Systems:</strong> Linux (Suse, Ubuntu, Amazon Linux)</li>
+                <li><strong>Cloud Platforms:</strong> AWS (EC2, S3, IAM, VPC, EBS), OpenStack (Nova)</li>
+                <li><strong>Automation & IaC:</strong> Bash Scripting, Terraform, N8N </li>
+                <li><strong>Containers:</strong> Docker, Kubernetes</li>
+                <li><strong>Infrastructure & Ops:</strong> Server Provisioning, Capacity Planning, Scaling, Backup & Recovery</li>
+                <li><strong>Networking:</strong> TCP/IP, DNS, Subnetting, LAN/WAN</li>
+                <li><strong>Monitoring & Support:</strong> Incident Management, RCA, SLA Support, Preventive Maintenance</li>
+                <li><strong>Databases & Storage:</strong> Storage Expansion, Database Migration</li>
+                <li><strong>Methodologies:</strong> Production Support, High Availability, Disaster Recovery</li>
+            </ul>
+        </section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>I am a Cloud and DevOps Engineer with strong hands-on experience in Linux system administration,
-    AWS cloud services, CI/CD pipelines, infrastructure engineering, SRE practices,
-    automation, and monitoring. This portfolio is built using AWS Lambda + API Gateway + Route 53.</p>
-</section>
+        <section id="projects">
+            <h2>📂 Projects</h2>
+            <div class="project">
+                <h3>Serverless DevOps Portfolio</h3>
+                <p>AWS Lambda + API Gateway + S3 + Route 53 based serverless portfolio.</p>
+            </div>
+            <div class="project">
+                <h3>CI/CD Automation</h3>
+                <p>Jenkins pipelines integrating GitHub, Docker, EC2, and automated deployments.</p>
+            </div>
+            <div class="project">
+                <h3>Monitoring Stack</h3>
+                <p>Prometheus, Grafana dashboards with alerts and performance monitoring.</p>
+            </div>
+        </section>
 
-<section id="skills">
-    <h2>💡 Skills</h2>
-    <ul class="skills-list">
-        <li><strong>Operating Systems:</strong> Linux (Suse, Ubuntu, Amazon Linux)</li>
-        <li><strong>Cloud Platforms:</strong> AWS (EC2, S3, IAM, VPC, EBS), OpenStack (Nova)</li>
-        <li><strong>Automation & IaC:</strong> Bash Scripting, Terraform, N8N</li>
-        <li><strong>Containers:</strong> Docker, Kubernetes</li>
-        <li><strong>Infrastructure & Ops:</strong> Server Provisioning, Capacity Planning, Scaling</li>
-        <li><strong>Networking:</strong> TCP/IP, DNS, Subnetting, LAN/WAN</li>
-        <li><strong>Monitoring & Support:</strong> Incident Management, RCA, SLA Support</li>
-        <li><strong>Databases & Storage:</strong> Storage Expansion, Database Migration</li>
-        <li><strong>Methodologies:</strong> High Availability, Disaster Recovery</li>
-    </ul>
-</section>
+        <section id="contact">
+            <h2>📫 Contact Me</h2>
+            <div class="contact">
+                <a href="mailto:reddy.manmadh@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/manmadh-reddy-89b35017" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/manmadhdevops" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+    </main>
 
-<section id="projects">
-    <h2>📂 Projects</h2>
-    <div class="project">
-        <h3>Serverless DevOps Portfolio</h3>
-        <p>AWS Lambda + API Gateway + S3 + Route 53 based serverless portfolio.</p>
-    </div>
-</section>
-
-<section id="contact">
-    <h2>📫 Contact Me</h2>
-    <div class="contact">
-        <a href="mailto:reddy.manmadh@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/manmadh-reddy-89b35017" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/manmadhdevops" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-    </div>
-</section>
-
-</main>
-
-<footer>
-    <p>© 2026 Manmadh Kumar Reddy 🚀</p>
-</footer>
-
+    <footer>
+        <p>© 2026 Manmadh Kumar Reddy 🚀</p>
+    </footer>
 </body>
 </html>
 """
