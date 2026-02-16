@@ -308,7 +308,7 @@ def lambda_handler(event, context):
 
     <div class="title">
     <i class="devicon-linux-plain colored jump"></i> Linux &nbsp; | &nbsp;
-    <i class="devicon-amazonwebservices-original colored jump"></i> AWS &nbsp; | &nbsp;
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" class="jump aws-icon"> AWS
     <i class="fas fa-infinity jump"></i> DevOps Engineer &nbsp; | &nbsp;
     <i class="fas fa-shield-alt jump"></i> SRE &nbsp; | &nbsp;
     <i class="fas fa-robot jump"></i> Automation &nbsp; | &nbsp;
