@@ -284,7 +284,7 @@ def lambda_handler(event, context):
 
     <div class="scrolling-skills">
         <span>
-            <i class="fab fa-linux"></i> Linuxx ⚡ 
+            <i class="fab fa-linux"></i> Linux⚡ 
             <i class="fab fa-aws"></i> AWS ⚡ 
             <i class="fas fa-code-branch"></i> CI/CD ⚡ 
             <i class="fas fa-robot"></i> Automation ⚡ 
