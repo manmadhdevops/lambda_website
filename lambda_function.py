@@ -276,12 +276,14 @@ def lambda_handler(event, context):
         <i class="devicon-linux-plain colored"></i>
         <i class="devicon-amazonwebservices-original colored"></i>
 
+        <i class="fab fa-linux"></i> Linux &nbsp; | &nbsp;
+        <i class="fab fa-aws"></i> AWS &nbsp; | &nbsp;
         <i class="fas fa-infinity"></i> DevOps Engineer &nbsp; | &nbsp;
         <i class="fas fa-shield-alt"></i> SRE &nbsp; | &nbsp;
         <i class="fas fa-robot"></i> Automation &nbsp; | &nbsp;
         <i class="fas fa-chart-line"></i> Monitoring
         <i class="fas fa-network-wired"></i> Networking &nbsp; | &nbsp;
-        <i class="devicon-n8n-plain colored"></i>
+        <i class="fas fa-project-diagram"></i> n8n &nbsp; | &nbsp;
 
             </div>
 
