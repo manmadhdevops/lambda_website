@@ -300,6 +300,12 @@ def lambda_handler(event, context):
     margin-right: 6px;
 }
 
+.icon-img {
+    width: 22px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
 
     </style>
 </head>
