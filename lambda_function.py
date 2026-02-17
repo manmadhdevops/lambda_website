@@ -306,8 +306,9 @@ def lambda_handler(event, context):
     margin-right: 6px;
 }
 
-.dev icon-img {
+.devops icon-img {
     width: 22px;
+    height: 22px;
     vertical-align: middle;
     margin-right: 6px;
 }
@@ -326,7 +327,7 @@ def lambda_handler(event, context):
     <div class="title">
     <i class="devicon-linux-plain colored jump"></i> Linux &nbsp; | &nbsp;
     <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" class="jump aws-icon"> AWS | &nbsp;
-    <img src="https://manmadhreddy.s3.us-east-1.amazonaws.com/devops.jpg" class="dev icon-img"> DevOps &nbsp; | &nbsp;
+    <img src="https://manmadhreddy.s3.us-east-1.amazonaws.com/devops.jpg" class="devops icon-img"> DevOps &nbsp; | &nbsp;
     <img src="https://cdn-icons-png.flaticon.com/512/2913/2913465.png" class="jump icon-img"> SRE &nbsp; | &nbsp;
     <i class="fas fa-robot jump icon-img"    vertical-align:middle;"></i> &nbsp;  Automation &nbsp; | &nbsp;
     <i class="fas fa-chart-line jump icon-img "></i>  &nbsp;  Monitoring &nbsp; | &nbsp;
