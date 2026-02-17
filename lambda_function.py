@@ -350,9 +350,11 @@ def lambda_handler(event, context):
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>I am a Cloud and DevOps Engineer with strong hands-on experience in Linux system administration,
-            AWS cloud services, CI/CD pipelines, infrastructure engineering, SRE practices,
-            automation, and monitoring. Experience in handling large server environments 1000+ which includes on-Prem and Cloud environments. This portfolio is built using AWS Lambda + API GateWay + Route 53.</p>
+            <p>I am a Cloud & DevOps Engineer with strong hands-on experience in Linux system administration, AWS cloud services, CI/CD pipeline implementation, infrastructure engineering, SRE practices, automation, and monitoring.
+
+I have extensive experience managing and maintaining large-scale environments (1000+ servers) across both on-premises and cloud infrastructures, ensuring high availability, performance optimization, and operational excellence.
+
+This portfolio is architected using AWS Lambda, API Gateway, and Route 53, demonstrating my expertise in serverless and scalable cloud-native architectures.</p>
         </section>
 
         <section id="skills">
