@@ -317,7 +317,7 @@ def lambda_handler(event, context):
 </head>
 <body>
 <header>
-    <h1>🚀 Manmadh Kumar Reddy</h1>
+    <h1>🚀 Manmadh Kumar Reddy 🚀 </h1>
 
     <img src="https://manmadhreddy.s3.us-east-1.amazonaws.com/Profile_Pic4.jpg"
          alt="Manmadh Kumar Reddy"
