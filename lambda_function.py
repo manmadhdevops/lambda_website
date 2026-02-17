@@ -334,7 +334,7 @@ def lambda_handler(event, context):
     <div class="scrolling-skills">
         <span>
             <i class="devicon-linux-plain colored"></i> Linux⚡ 
-            <i class="devicon-amazonwebservices-original colored"></i> AWS ⚡ 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"  style="height:22px; vertical-align:middle;"> AWS ⚡
             <i class="fas fa-code-branch"></i> CI/CD ⚡ 
             <i class="fas fa-robot"></i> Automation ⚡ 
             <i class="fas fa-chart-line"></i> Monitoring ⚡ 
