@@ -359,7 +359,7 @@ def lambda_handler(event, context):
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>I am a Cloud & DevOps Engineer with strong hands-on experience in Linux system administration, AWS cloud services, CI/CD pipeline implementation, infrastructure engineering, SRE practices, automation, and monitoring.
+            <p>Linux System Administrator, Data Centre Operations, Infra Structure engineer / Cloud Engineer with 10+ years of IT experience and 15+ years total professional experience, specializing in Datacom, Server Installation, Linux administration, cloud infrastructure, server deployment, automation, and production support. Strong hands-on expertise in AWS, OpenStack, Terraform, Bash scripting, and managing large-scale enterprise environments (1000+ servers).
 
 I have extensive experience managing and maintaining large-scale environments (1000+ servers) across both on-premises and cloud infrastructures, ensuring high availability, performance optimization, and operational excellence.
 
