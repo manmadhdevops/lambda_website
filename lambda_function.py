@@ -366,7 +366,7 @@ I have extensive experience managing and maintaining large-scale environments (1
 This portfolio is architected using AWS Lambda, API Gateway, and Route 53, demonstrating my expertise in serverless and scalable cloud-native architectures.</p>
         </section>
 
-        <section id="skills">
+        <section id="skills ">
             <h2>💡 Skills</h2>
             <ul class="skills-list">
                 <li><strong>Operating Systems:</strong> Linux (Suse, Ubuntu, Amazon Linux)</li>
