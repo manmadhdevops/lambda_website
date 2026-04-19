@@ -327,7 +327,7 @@ def lambda_handler(event, context):
     <div class="title">
 
     <i class="fas fa-server"></i> CEM SmartCare Engineer ⚡  | &nbsp;
-    <i class="fas fa-server"></i> Infrastructure Management ⚡  | &nbsp;
+    <i class="fas fa-server"></i> InfraManagement ⚡  | &nbsp;
     <i class="fas fa-network-wired jump icon-img"></i> &nbsp;  Networking &nbsp; | &nbsp;
     <i class="devicon-linux-plain colored jump"></i> Linux &nbsp; | &nbsp;
     <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" class="jump aws-icon"> AWS | &nbsp;
@@ -360,7 +360,7 @@ def lambda_handler(event, context):
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>Linux System Administrator, Data Centre Operations, Infra Structure engineer / Cloud Engineer with 10+ years of IT experience and 15+ years total professional experience, specializing in Datacom, Server Installation, Linux administration, cloud infrastructure, server deployment, automation, and production support. Strong hands-on expertise in AWS, OpenStack, Terraform, Bash scripting, and managing large-scale enterprise environments (1000+ servers).
+            <p>CEM SmartCare Engineer ,Linux System Administrator, Data Centre Operations, Infra Structure engineer / Cloud Engineer with 10+ years of IT experience and 15+ years total professional experience, specializing in Datacom, Server Installation, Linux administration, cloud infrastructure, server deployment, automation, and production support. Strong hands-on expertise in AWS, OpenStack, Terraform, Bash scripting, and managing large-scale enterprise environments (1000+ servers).
 
 I have extensive experience managing and maintaining large-scale environments (1000+ servers) across both on-premises and cloud infrastructures, ensuring high availability, performance optimization, and operational excellence.
 
