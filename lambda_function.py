@@ -327,7 +327,7 @@ def lambda_handler(event, context):
     <div class="title">
 
     <i class="fas fa-server"></i> CEM SmartCare Engineer ⚡  | &nbsp;
-    <i class="fas fa-server"></i> InfraManagement ⚡  | &nbsp;
+    <i class="fas fa-server"></i> Infra Management ⚡  | &nbsp;
     <i class="fas fa-network-wired jump icon-img"></i> &nbsp;  Networking &nbsp; | &nbsp;
     <i class="devicon-linux-plain colored jump"></i> Linux &nbsp; | &nbsp;
     <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" class="jump aws-icon"> AWS | &nbsp;
