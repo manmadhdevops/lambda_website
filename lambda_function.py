@@ -349,7 +349,7 @@ def lambda_handler(event, context):
             <i class="fas fa-robot"></i> Automation ⚡ 
             <i class="fas fa-chart-line"></i> Monitoring ⚡ 
             <i class="devicon-docker-plain colored"></i> Docker ⚡ 
-            <i class="devicon-kubernetes-plain colored"></i> Kubernetes ⚡ 
+            <!-- <i class="devicon-kubernetes-plain colored"></i> Kubernetes ⚡ -->
             <i class="devicon-terraform-plain colored"></i> Terraform ⚡ 
             <i class="devicon-n8n-plain colored"></i> n8n ⚡
             <i class="devicon-githubactions-plain colored"></i> GitHub Actions ⚡
